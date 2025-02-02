@@ -28,6 +28,9 @@ export default function ServerSideFns() {
         <p>
           <b>Ay sonu:</b> {endOfMonth(currentDate).toString()}
         </p>
+        <p>
+          <b>2025-02-02:</b> {new Date("2025-02-02").toString()}
+        </p>
       </div>
     </div>
   );
