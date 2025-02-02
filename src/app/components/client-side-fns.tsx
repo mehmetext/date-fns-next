@@ -29,15 +29,15 @@ export default function ClientSideFns() {
           <b>Ay sonu:</b> {endOfMonth(currentDate).toString()}
         </p>
         <p>
-          <b>2025-02-02:</b> {new Date("2025-02-02 00:00:00").toString()}
+          <b>2025-02-02:</b> {new Date("2025-02-02").toString()}
         </p>
         <p>
-          <b>2025-02-02 00:00:00:</b>{" "}
-          {new Date("2025-02-02 00:00:00").toString()}
+          <b>2025-02-02T00:00:00Z:</b>{" "}
+          {new Date("2025-02-02T00:00:00Z").toString()}
         </p>
         <p>
-          <b>2025-02-02 05:00:00:</b>{" "}
-          {new Date("2025-02-02 05:00:00").toString()}
+          <b>2025-02-02T05:00:00Z:</b>{" "}
+          {new Date("2025-02-02T05:00:00Z").toString()}
         </p>
       </div>
     </div>
