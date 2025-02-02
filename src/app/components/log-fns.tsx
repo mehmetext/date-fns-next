@@ -11,6 +11,7 @@ export default function LogFns() {
           onClick={async (date) => {
             "use server";
             console.log("Client to Server:", date);
+            return date;
           }}
         />
         <S2CButton date={new Date()} />
