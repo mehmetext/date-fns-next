@@ -10,6 +10,9 @@ export default function ServerSideFns() {
       <h1 className="text-2xl font-bold">Server Side Fns</h1>
       <div className="flex flex-col gap-1">
         <p>
+          <b>Şu anki timezone offset:</b> {currentDate.getTimezoneOffset()}
+        </p>
+        <p>
           <b>Şu anki tarih:</b> {currentDate.toString()}
         </p>
         <p>
