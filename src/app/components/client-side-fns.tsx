@@ -1,6 +1,12 @@
 "use client";
 
-import { endOfMonth, format, startOfMonth, subMonths } from "date-fns";
+import {
+  addMonths,
+  endOfMonth,
+  format,
+  startOfMonth,
+  subMonths,
+} from "date-fns";
 
 export default function ClientSideFns() {
   const currentDate = new Date();
@@ -24,6 +30,9 @@ export default function ClientSideFns() {
         </p>
         <p>
           <b>Ay başı:</b> {startOfMonth(currentDate).toString()}
+        </p>
+        <p>
+          <b>1 ay sonra:</b> {addMonths(currentDate, 1).toString()}
         </p>
         <p>
           <b>Ay sonu:</b> {endOfMonth(currentDate).toString()}
