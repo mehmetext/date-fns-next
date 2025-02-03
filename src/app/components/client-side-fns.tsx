@@ -4,6 +4,7 @@ import {
   addMonths,
   endOfMonth,
   format,
+  parse,
   startOfMonth,
   subMonths,
 } from "date-fns";
@@ -53,6 +54,13 @@ export default function ClientSideFns() {
         <p>
           <b>2025-02-02T05:00:00Z:</b>{" "}
           {new Date("2025-02-02T05:00:00Z").toString()}
+        </p>
+        <p>
+          <b>parse(2025-02):</b>{" "}
+          {parse("2025-02", "yyyy-MM", new Date()).toString()}
+        </p>
+        <p>
+          <b>2025-02:</b> {new Date("2025-02").toString()}
         </p>
       </div>
     </div>
