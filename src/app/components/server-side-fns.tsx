@@ -32,10 +32,16 @@ export default function ServerSideFns() {
           <b>Ay başı:</b> {startOfMonth(currentDate).toString()}
         </p>
         <p>
+          <b>Ay başı (ISO):</b> {startOfMonth(currentDate).toISOString()}
+        </p>
+        <p>
           <b>1 ay sonra:</b> {addMonths(currentDate, 1).toString()}
         </p>
         <p>
           <b>Ay sonu:</b> {endOfMonth(currentDate).toString()}
+        </p>
+        <p>
+          <b>Ay sonu (ISO):</b> {endOfMonth(currentDate).toISOString()}
         </p>
         <p>
           <b>2025-02-02:</b> {new Date("2025-02-02").toString()}
