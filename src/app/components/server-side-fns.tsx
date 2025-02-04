@@ -9,6 +9,8 @@ import {
   subMonths,
 } from "date-fns";
 
+export const dynamic = "force-dynamic";
+
 function getCurrentDate() {
   return new Date();
 }
