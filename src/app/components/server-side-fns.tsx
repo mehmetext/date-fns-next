@@ -8,15 +8,15 @@ import {
   startOfMonth,
   subMonths,
 } from "date-fns";
+import { headers } from "next/headers";
 
-export const dynamic = "force-dynamic";
-
-async function getCurrentDate() {
+function getCurrentDate() {
+  headers();
   return new Date();
 }
 
-export default async function ServerSideFns() {
-  const currentDate = await getCurrentDate();
+export default function ServerSideFns() {
+  const currentDate = getCurrentDate();
 
   return (
     <div className="flex flex-col gap-2">
