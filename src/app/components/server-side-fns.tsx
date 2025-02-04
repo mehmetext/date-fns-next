@@ -3,6 +3,7 @@ import {
   endOfMonth,
   format,
   parse,
+  parseISO,
   startOfMonth,
   subMonths,
 } from "date-fns";
@@ -64,6 +65,9 @@ export default function ServerSideFns() {
         <p>
           <b>parse(2025-02):</b>{" "}
           {parse("2025-02", "yyyy-MM", new Date()).toString()}
+        </p>
+        <p>
+          <b>parseISO(2025-02):</b> {parseISO("2025-02").toString()}
         </p>
         <p>
           <b>2025-02:</b> {new Date("2025-02").toString()}
