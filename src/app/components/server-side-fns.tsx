@@ -11,12 +11,12 @@ import {
 
 export const dynamic = "force-dynamic";
 
-function getCurrentDate() {
+async function getCurrentDate() {
   return new Date();
 }
 
-export default function ServerSideFns() {
-  const currentDate = getCurrentDate();
+export default async function ServerSideFns() {
+  const currentDate = await getCurrentDate();
 
   return (
     <div className="flex flex-col gap-2">
