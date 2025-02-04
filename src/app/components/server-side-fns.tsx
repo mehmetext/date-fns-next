@@ -9,7 +9,7 @@ import {
   subMonths,
 } from "date-fns";
 
-export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export default function ServerSideFns() {
   const currentDate = new Date();
