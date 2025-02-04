@@ -2,6 +2,7 @@
 
 import {
   addMonths,
+  differenceInHours,
   endOfMonth,
   format,
   parse,
@@ -77,8 +78,15 @@ export default function ClientSideFns() {
           <b>2025-02:</b> {new Date("2025-02").toString()}
         </p>
         <p>
+          <b>2025-02-01:</b> {new Date("2025-02-01").toString()}
+        </p>
+        <p>
           <b>startOfMonth(2025-02):</b>{" "}
           {startOfMonth(new Date("2025-02")).toString()}
+        </p>
+        <p>
+          <b>differenceInHours(from 2025-02-01T00:00Z):</b>{" "}
+          {differenceInHours(new Date(), new Date("2025-02-01T00:00Z"))}
         </p>
       </div>
     </div>
