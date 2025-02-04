@@ -70,7 +70,15 @@ export default function ClientSideFns() {
           <b>parseISO(2025-02):</b> {parseISO("2025-02").toString()}
         </p>
         <p>
+          <b>startOfMonth(parseISO(2025-02)):</b>{" "}
+          {startOfMonth(parseISO("2025-02")).toString()}
+        </p>
+        <p>
           <b>2025-02:</b> {new Date("2025-02").toString()}
+        </p>
+        <p>
+          <b>startOfMonth(2025-02):</b>{" "}
+          {startOfMonth(new Date("2025-02")).toString()}
         </p>
       </div>
     </div>
