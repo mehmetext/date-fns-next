@@ -9,10 +9,12 @@ import {
   subMonths,
 } from "date-fns";
 
-export const revalidate = 0;
+function getCurrentDate() {
+  return new Date();
+}
 
 export default function ServerSideFns() {
-  const currentDate = new Date();
+  const currentDate = getCurrentDate();
 
   return (
     <div className="flex flex-col gap-2">
